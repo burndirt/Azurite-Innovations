@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azurite Innovations</title>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding (UTF-8 for most languages). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices. -->
+    <title>Azurite Innovations</title> <!-- The title that appears in the browser tab. -->
+
     <style>
+        /* General body styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F0FFFF; /* Azure color for the perimeter */
-            color: #333;
+            font-family: Arial, sans-serif; /* Sets a simple, clean font for the page. */
+            margin: 0; /* Removes default browser margins. */
+            padding: 0; /* Removes default browser padding. */
+            background-color: #F0FFFF; /* Azure color for the perimeter background. */
+            color: #333; /* Sets the default text color to a dark gray. */
+            height: 100%; /* Ensures the body takes up the full height of the browser window. */
         }
+
+        /* Background image container */
         .background {
-            background: url('soekarno-unsplash.jpg') no-repeat center center fixed;
-            background-size: cover;
-            padding: 50px 0;
+            background: url('soekarno-unsplash.jpg') no-repeat center center; /* Sets the background image, centers it, and prevents tiling. */
+            background-size: cover; /* Ensures the image covers the entire viewport without distortion. */
+            min-height: 100vh; /* Ensures the background image covers the full viewport height. */
+            display: flex; /* Enables flexbox layout for centering content. */
+            justify-content: center; /* Horizontally centers the container. */
+            align-items: center; /* Vertically centers the container. */
         }
+
+        /* Main content container */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            max-width: 800px; /* Limits the content width to 800px for better readability. */
+            margin: 0 auto; /* Centers the container horizontally. */
+            padding: 20px; /* Adds space inside the container. */
+            background: rgba(255, 255, 255, 0.85); /* White background with slight transparency. */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect. */
+            border-radius: 8px; /* Rounds the corners of the container. */
+            text-align: center; /* Centers text within the container. */
         }
+
+        /* Headings (e.g., About Azurite Innovations, Our Team's Expertise) */
         h1, h2 {
-            color: #007bff;
+            color: #007bff; /* Sets the heading text color to a blue shade. */
+            font-size: 1.5rem; /* Sets a larger font size for headings. */
         }
+
+        /* Paragraph text */
+        p {
+            font-size: 1.2rem; /* Slightly larger text for better readability. */
+            line-height: 1.6; /* Increases spacing between lines for readability. */
+        }
+
+        /* Links */
         a {
-            color: #007bff;
-            text-decoration: none;
+            color: #007bff; /* Sets link color to match headings. */
+            text-decoration: none; /* Removes the underline from links by default. */
+            font-size: 1.2rem; /* Matches the font size of paragraph text. */
         }
+
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underlines the link when hovered for clarity. */
         }
+
+        /* Sections (e.g., About, Team Expertise, Learn More) */
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Adds space below each section. */
         }
+
+        /* Logo styling */
         .logo {
-            display: block;
-            max-width: 150px;
-            margin: 0 auto 20px auto;
+            display: block; /* Treats the logo as a block element for easier alignment. */
+            max-width: 150px; /* Limits the logo width to 150px. */
+            margin: 0 auto 20px auto; /* Centers the logo and adds space below it. */
         }
     </style>
 </head>
 <body>
+    <!-- Background container for the entire page -->
     <div class="background">
+        <!-- Main content container -->
         <div class="container">
-            <!-- Logo -->
-            <img src="Azurite logo.jpg" alt="Azurite Innovations Logo" class="logo">
+            <!-- Logo section -->
+            <img src="Azurite logo.jpg" alt="Azurite Innovations Logo" class="logo"> <!-- Displays the Azurite logo. -->
 
-            <!-- About Azurite Innovations Section -->
+            <!-- About Azurite Innovations section -->
             <h1>About Azurite Innovations</h1>
             <div class="section">
-                <p>Azurite Innovations (AI) focuses on advancing technologies in material sciences, nanotechnology, green technologies, and clean tech. The team also specializes in accessing non-dilutive financing to support innovation.</p>
+                <p>
+                    Azurite Innovations (AI) focuses on advancing technologies in material sciences, nanotechnology, 
+                    green technologies, and clean tech. The team also specializes in accessing non-dilutive financing to support innovation.
+                </p>
             </div>
 
-            <!-- Team Expertise Section -->
+            <!-- Team Expertise section -->
             <h2>Our Team's Expertise</h2>
             <div class="section">
-                <p>The team at Azurite has extensive experience helping startups grow from concept, through lab-scale development, and into commercialization. Past associations include contributions to organizations that have achieved commercial success in diverse areas.</p>
+                <p>
+                    The team at Azurite has extensive experience helping startups grow from concept, 
+                    through lab-scale development, and into commercialization. Past associations include 
+                    contributions to organizations that have achieved commercial success in diverse areas.
+                </p>
             </div>
 
-            <!-- Links Section -->
+            <!-- Learn More section with links -->
             <h2>Learn More</h2>
             <div class="section">
                 <ul>
@@ -78,4 +115,5 @@
     </div>
 </body>
 </html>
+
 
