@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Specifies the character encoding (UTF-8 for most languages). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices. -->
-    <title>Azurite Innovations</title> <!-- The title that appears in the browser tab. -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azurite Innovations</title>
     <style>
         /* General body styles */
         body {
-            font-family: Arial, sans-serif; /* Sets a simple, clean font for the page. */
+            font-family: Arial, sans-serif; /* Sets a clean and professional font. */
             margin: 0; /* Removes default browser margins. */
             padding: 0; /* Removes default browser padding. */
             background-color: #F0FFFF; /* Azure color for the perimeter background. */
-            color: #333; /* Sets the default text color to a dark gray. */
-            height: 100%; /* Ensures the body takes up the full height of the browser window. */
+            color: #333; /* Sets default text color to a dark gray. */
+            height: 100%; /* Ensures body takes up the full height of the window. */
         }
 
         /* Background image container */
         .background {
-            background: url('soekarno-unsplash.jpg') no-repeat center center; /* Sets the background image, centers it, and prevents tiling. */
+            background: url('soekarno-unsplash.jpg') no-repeat center center; /* Sets and centers the background image. */
             background-size: cover; /* Ensures the image covers the entire viewport without distortion. */
             min-height: 100vh; /* Ensures the background image covers the full viewport height. */
             display: flex; /* Enables flexbox layout for centering content. */
-            justify-content: center; /* Horizontally centers the container. */
-            align-items: center; /* Vertically centers the container. */
+            justify-content: center; /* Horizontally centers the content. */
+            align-items: center; /* Vertically centers the content. */
         }
 
         /* Main content container */
         .container {
-            max-width: 800px; /* Limits the content width to 800px for better readability. */
+            max-width: 800px; /* Limits content width to enhance readability. */
             margin: 0 auto; /* Centers the container horizontally. */
-            padding: 20px; /* Adds space inside the container. */
-            background: rgba(255, 255, 255, 0.85); /* White background with slight transparency. */
+            padding: 20px; /* Adds padding inside the container. */
+            background: rgba(255, 255, 255, 0.65); /* White background with 65% transparency. */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect. */
             border-radius: 8px; /* Rounds the corners of the container. */
-            text-align: center; /* Centers text within the container. */
+            text-align: center; /* Centers the text inside the container. */
         }
 
-        /* Headings (e.g., About Azurite Innovations, Our Team's Expertise) */
+        /* Headings */
         h1, h2 {
-            color: #007bff; /* Sets the heading text color to a blue shade. */
-            font-size: 1.5rem; /* Sets a larger font size for headings. */
+            color: #007bff; /* Sets headings to a blue color. */
+            font-size: 1.5rem; /* Larger font size for emphasis. */
         }
 
         /* Paragraph text */
         p {
-            font-size: 1.2rem; /* Slightly larger text for better readability. */
-            line-height: 1.6; /* Increases spacing between lines for readability. */
+            font-size: 1.2rem; /* Slightly larger text for readability. */
+            line-height: 1.6; /* Adds space between lines for better readability. */
         }
 
         /* Links */
         a {
-            color: #007bff; /* Sets link color to match headings. */
-            text-decoration: none; /* Removes the underline from links by default. */
-            font-size: 1.2rem; /* Matches the font size of paragraph text. */
+            color: #007bff; /* Matches links with heading colors. */
+            text-decoration: none; /* Removes underline from links. */
+            font-size: 1.2rem; /* Ensures link font size matches paragraph text. */
         }
 
         a:hover {
-            text-decoration: underline; /* Underlines the link when hovered for clarity. */
+            text-decoration: underline; /* Underlines links on hover for clarity. */
         }
 
-        /* Sections (e.g., About, Team Expertise, Learn More) */
-        .section {
-            margin-bottom: 20px; /* Adds space below each section. */
+        /* Unordered list without bullets */
+        .no-bullets {
+            list-style-type: none; /* Removes bullets from the list. */
+            padding: 0; /* Removes default padding around the list. */
+            margin: 0; /* Removes default margin around the list. */
         }
 
         /* Logo styling */
         .logo {
-            display: block; /* Treats the logo as a block element for easier alignment. */
-            max-width: 150px; /* Limits the logo width to 150px. */
+            display: block; /* Treats the logo as a block element for better alignment. */
+            max-width: 150px; /* Limits logo width to maintain proportions. */
             margin: 0 auto 20px auto; /* Centers the logo and adds space below it. */
         }
     </style>
@@ -85,25 +86,17 @@
             <h1>About Azurite Innovations</h1>
             <div class="section">
                 <p>
-                    Azurite Innovations (AI) focuses on advancing technologies in material sciences, nanotechnology, 
-                    green technologies, and clean tech. The team also specializes in accessing non-dilutive financing to support innovation.
-                </p>
-            </div>
-
-            <!-- Team Expertise section -->
-            <h2>Our Team's Expertise</h2>
-            <div class="section">
-                <p>
-                    The team at Azurite has extensive experience helping startups grow from concept, 
-                    through lab-scale development, and into commercialization. Past associations include 
-                    contributions to organizations that have achieved commercial success in diverse areas.
+                    Azurite Innovations specializes in advancing materials science, nanotechnology, 
+                    and sustainable technologies, with a focus on green energy and clean tech solutions. 
+                    We bridge the gap between innovation and commercialization by leveraging expertise 
+                    in non-dilutive financing to bring emerging technologies to market effectively and efficiently.
                 </p>
             </div>
 
             <!-- Learn More section with links -->
             <h2>Learn More</h2>
-            <div class="no-bullets">
-                <ul>
+            <div class="section">
+                <ul class="no-bullets">
                     <li><a href="https://nanoone.ca" target="_blank">Nano One</a> - Pioneers in battery materials innovation.</li>
                     <li><a href="https://vivecrop.com" target="_blank">Vive Crop Protection</a> - Innovators in agricultural nanotechnology.</li>
                     <li><a href="https://www.macrotek.com" target="_blank">Macrotek</a> - Experts in air pollution control systems.</li>
@@ -115,5 +108,4 @@
     </div>
 </body>
 </html>
-
 
